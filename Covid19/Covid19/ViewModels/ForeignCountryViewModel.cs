@@ -9,5 +9,9 @@ namespace Covid19.ViewModels
 {
     class ForeignCountryViewModel : Conductor<object>, IHaveDisplayName
     {
+        public ForeignCountryViewModel()
+        {
+
+        }
     }
 }
