@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\포트폴리오\Covid19\Covid19\obj\Debug\
+D:\포트폴리오\Covid19_WPF\Covid19\Covid19\obj\Debug\
 Covid19
 none
 false
 DEBUG;TRACE
-D:\포트폴리오\Covid19\Covid19\App.xaml
+D:\포트폴리오\Covid19_WPF\Covid19\Covid19\App.xaml
 3-1141110302
 
 111628571041
-1561729670010
+156-1181411525
 Views\ForeignCountryView.xaml;Views\KoreaView.xaml;Views\MainView.xaml;
 
 False

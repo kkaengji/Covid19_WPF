@@ -49,6 +49,22 @@ namespace Covid19.Views {
     /// </summary>
     public partial class KoreaView : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 37 "..\..\..\Views\KoreaView.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label Coronic;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 39 "..\..\..\Views\KoreaView.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label DayCoronic;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -77,6 +93,15 @@ namespace Covid19.Views {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.Coronic = ((System.Windows.Controls.Label)(target));
+            return;
+            case 2:
+            this.DayCoronic = ((System.Windows.Controls.Label)(target));
+            return;
+            }
             this._contentLoaded = true;
         }
     }

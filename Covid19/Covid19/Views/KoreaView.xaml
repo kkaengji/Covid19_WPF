@@ -34,9 +34,9 @@
 
             <Label Grid.Row="0" Grid.Column="0" Content="확진환자" FontSize="13" Foreground="Red" FontWeight="Bold"
                    VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
-            <Label Grid.Row="1" Grid.Column="0" Content="19,947" FontSize="18" Foreground="Red" FontWeight="Bold"
+            <Label x:Name="Coronic" Grid.Row="1" Grid.Column="0" Content="21,432" FontSize="18" Foreground="Red" FontWeight="Bold"
                    VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
-            <Label Grid.Row="2" Grid.Column="0" Content="248" Foreground="Red" FontWeight="Bold"
+            <Label x:Name="DayCoronic" Grid.Row="2" Grid.Column="0" Content="136" Foreground="Red" FontWeight="Bold"
                    VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
             <Label Grid.Row="0" Grid.Column="1" Content="검사진행" FontSize="13" Foreground="Orange" FontWeight="Bold"
@@ -53,7 +53,7 @@
             <Label Grid.Row="2" Grid.Column="2" Content="70" Foreground="Blue" FontWeight="Bold"
                    VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-            <Label Grid.Row="0" Grid.Column="3" Content="완치자" FontSize="13" Foreground="Black" FontWeight="Bold"
+            <Label Grid.Row="0" Grid.Column="3" Content="사망자" FontSize="13" Foreground="Black" FontWeight="Bold"
                    VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
             <Label Grid.Row="1" Grid.Column="3" Content="324" FontSize="18" Foreground="Black" FontWeight="Bold"
                    VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
