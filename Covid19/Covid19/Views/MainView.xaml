@@ -10,7 +10,7 @@
     xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
     xmlns:local="clr-namespace:Covid19"
     mc:Ignorable="d"
-    Title="Covid19" Width="500" Height="800"
+    Title="Covid19" Width="500" Height="900"
     ResizeMode="NoResize">
 
     <Grid>
@@ -23,11 +23,14 @@
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Content="COVID19" Margin="5,0,0,0" FontSize="20" FontWeight="Bold"
                    VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
-            <Label x:Name="NowDate" Grid.Column="1" Content="( 2020.09.08 기준 )" FontSize="13"
+            <Label x:Name="NowDate" Grid.Column="1" Content="( 2020.09.08 " FontSize="13"
+                   VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
+            <Label x:Name="NowTime" Grid.Column="2" Content="PM 2:53 ) " FontSize="13"
                    VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
         </Grid>
 

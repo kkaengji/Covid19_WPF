@@ -10,12 +10,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Covid19.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="690" d:DesignWidth="500">
+             d:DesignHeight="790" d:DesignWidth="500">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="250"/>
+            <RowDefinition Height="35"/>
             <RowDefinition />
         </Grid.RowDefinitions>
 
@@ -78,7 +79,7 @@
             </Grid>
         </Border>
 
-        <Grid Grid.Row="2" Margin="10">
+        <Grid Grid.Row="2" Margin="10,10,10,0">
             <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Right">
                 <lvc:CartesianChart.AxisX>
                     <lvc:Axis Title="날짜" 
@@ -90,17 +91,31 @@
                 </lvc:CartesianChart.AxisY>
             </lvc:CartesianChart>
         </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="TxtSearchItem" Grid.Column="0" Width="100" Margin="5"
+                     VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            <Button x:Name="ButSearch" Grid.Column="1" Width="55" Height="25"
+                    Content="검색" FontSize="10" Background="LightGray"
+                    VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </Grid>
         
-        <Grid Grid.Row="3" Margin="10">
-            <DataGrid IsReadOnly="True" AutoGenerateColumns="False"
-                      SelectedItem="{Binding SelectedEmployee}" 
+        <Grid Grid.Row="4" Margin="10,0,10,10">
+            <DataGrid x:Name="DgvSearchItems" IsReadOnly="True" AutoGenerateColumns="False"
+                      SelectedItem="{Binding SelectedCovid}" 
                       Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
                       Width="450" HorizontalAlignment="Center">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="지역" />
-                    <DataGridTextColumn Header="총 확진자" />
-                    <DataGridTextColumn Header="금일 확진자" />
-                    <DataGridTextColumn Header="갱신일" />
+                    <DataGridTextColumn Header="지역명" Binding="{Binding Local}" />
+                    <DataGridTextColumn Header="확진자 수" Binding="{Binding Coronic}"/>
+                    <DataGridTextColumn Header="증감수" Binding="{Binding C_cnt}"/>
+                    <DataGridTextColumn Header="사망자 수" Binding="{Binding C_death}"/>
+                    <DataGridTextColumn Header="기준일시" Binding="{Binding C_day}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
